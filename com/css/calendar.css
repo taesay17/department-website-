@@ -64,7 +64,9 @@
 	opacity:1;
 }
 .st-content{
-    padding: 5px 0px;
+    padding: 15px 20px;
+	font-size: 1em;
+	color: #444;
 }
 
 @media screen and (max-width: 320px){
