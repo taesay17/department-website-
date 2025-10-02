@@ -74,6 +74,7 @@
 		text-shadow:1px 1px 0 rgb(0,0,0);
 		margin-bottom: 5px;
 		text-align: center;
+        transition: color 0.3s ease;
 	}
 	.details p{ 
 		font: 1.2em 'Droid Sans', Tahoma, Verdana, sans-serif; 
@@ -90,6 +91,7 @@
 		left: 45px;
 		bottom: 5px;
 		text-shadow: none;
+        transition: color 0.3s ease;
 	}
 		.details:hover h6 {
 			color: #33b5e5;
