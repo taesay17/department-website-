@@ -67,4 +67,8 @@
     /* стиль для mini панели */
     .to_top .to_top_panel .arrow{font-size:20px;}
     .to_top .to_top_panel .label{display:none;}
+
+    -moz-opacity: 0.3;
+    filter: alpha(opacity=30);
+    opacity: 0.3; /* Keep this */
 }
