@@ -1,5 +1,5 @@
 .st-accordion{
-	width: 940px;
+	width: 840px;
 }
 
 .st-accordion ul li{
@@ -66,10 +66,10 @@
 .st-content{
     padding: 15px 20px;
 	font-size: 1em;
-	color: #444;
+	color: #666;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 340px){
 	.st-accordion ul li > a{
 		font-size:1.2em;
 	}
