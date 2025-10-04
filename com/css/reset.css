@@ -180,7 +180,7 @@ li {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 10;
 }
 table a {
 	text-decoration: none;
