@@ -4,28 +4,7 @@
 <!--    <output url="file://$PROJECT_DIR$/out" />-->
 <!--  </component>-->
 <!--</project>-->
-
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Under Construction</title>
-        <style>
-            body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-            }
-            h1 {
-            color: #333;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>🚧 This page is under construction 🚧</h1>
-    </body>
-</html>
+<user>
+    <name>Bakramkhan</name>
+    <age>21</age>
+</user>
