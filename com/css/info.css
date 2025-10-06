@@ -1,0 +1,146 @@
+
+:root {
+    --main-color: #0055ff;
+    --text-color: #333;
+    --bg-light: #f8f9fb;
+    --bg-dark: #0b1b36;
+    --accent: #0078ff;
+    --radius: 12px;
+    --transition: 0.3s ease;
+    --max-width: 1100px;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background: var(--bg-dark);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.nav a:hover {
+    background: var(--accent);
+}
+
+/* Main content */
+.content {
+    padding: 40px 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+/* Info sections */
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform var(--transition);
+}
+
+.info-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Labs section */
+.labs {
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--bg-dark);
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+}
