@@ -1,0 +1,53 @@
+/* modern-style.css - Complete Redesign */
+/* Modern CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #1a237e;
+    --accent-blue: #283593;
+    --light-blue: #e8eaf6;
+    --text-dark: #2c3e50;
+    --text-light: #5d6d7e;
+    --white: #ffffff;
+    --gradient: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #f8fafc;
+}
+
+/* Loading animation for images */
+.mosaic-backdrop img {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Focus states for accessibility */
+#nav a:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+.mosaic-block:focus-within {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 4px;
+}
