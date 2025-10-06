@@ -18,9 +18,22 @@ The primary goal is to teach students how to use Git version control system and 
 | Bahromhan  | Abdullaev    | Frontend               |
 
 ---
+## 🌐 Production Server https://taesay17.github.io/department-website-/
+
+## 🚀 Features to be Implemented
+- Better expirience for user
+- New modern design
+
 
 ## Notes
 
 > - Everyone must contribute code, design, or documentation.
 > - Use branches (`com/`, `css/`) and Pull Requests for changes.
 > - Regularly sync with the `main` branch and resolve conflicts promptly.
+
+
+## 🕒 Time Management Plan
+
+- 1 day 2 members deploying commits for this project by 5 commits for each member
+- 2 day other 2 members deploying with also 5 commits for each member
+- 3 day working 4 members final day with 5 commits for each
