@@ -1,0 +1,168 @@
+/* Reset и базовые стили */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: linear-gradient(135deg, #f4f6f9, #e9f0f7);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1a73e8;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0b56c0;
+}
+
+/* Container */
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+#header-wrap {
+    background: #2b4c7e;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#logo img {
+    height: 60px;
+    display: block;
+}
+
+/* Modern navbar */
+#nav {
+    float: right;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+#nav ul li {
+    position: relative;
+}
+
+#nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+#nav ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #33b5e5;
+}
+
+/* Dropdown */
+#nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #34495e;
+    border-radius: 6px;
+    padding: 10px 0;
+    min-width: 220px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#nav ul li:hover > ul {
+    display: block;
+}
+
+#nav ul li ul li a {
+    padding: 10px 20px;
+    color: #f0f0f0;
+}
+
+#nav ul li ul li a:hover {
+    background: #2c3e50;
+    color: #33b5e5;
+}
+
+/* Content */
+#wrap-content {
+    margin-top: 30px;
+}
+
+#content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+#content h2, #content h3, #content h4 {
+    color: #2b4c7e;
+    margin-top: 20px;
+}
+
+#content p, #content li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+#content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#content table th, #content table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#content table th {
+    background-color: #f2f6fc;
+    color: #2b4c7e;
+}
+
+/* Footer */
+#footer-wrap {
+    background: #2b4c7e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+#footer p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    #nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    #nav ul li {
+        margin-bottom: 2px;
+    }
+    #nav ul li ul {
+        position: static;
+    }
+    #logo img {
+        height: 50px;
+    }
+}
