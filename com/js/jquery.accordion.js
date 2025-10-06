@@ -61,7 +61,7 @@
 		// easing of the open / close item animation
 		easing			: 'easeInOutExpo',
 		// speed of the scroll to action animation
-		scrollSpeed		: 900,
+		scrollSpeed		: 850,
 		// easing of the scroll to action animation
 		scrollEasing	: 'easeInOutExpo'
     };
