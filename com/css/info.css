@@ -184,6 +184,10 @@ img {
     padding: 40px 0;
 }
 
+.text {
+    font-size: 15px;
+}
+
 .intro h2 {
     font-size: 2rem;
     color: var(--main-color);
