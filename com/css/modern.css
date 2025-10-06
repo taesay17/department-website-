@@ -1,0 +1,150 @@
+/* === Modern UI Enhancements === */
+
+/* --- Base --- */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #f9fafb;
+    color: #333;
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header --- */
+#header-wrap {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    color: white;
+    padding: 10px 0;
+}
+
+#logo img {
+    max-height: 70px;
+    margin-top: 10px;
+}
+
+/* --- Navigation --- */
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+#nav ul li {
+    position: relative;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Dropdowns */
+#nav ul li ul {
+    position: absolute;
+    display: none;
+    background: white;
+    color: #333;
+    top: 35px;
+    left: 0;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+#nav ul li:hover ul {
+    display: block;
+}
+
+#nav ul li ul li a {
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+}
+
+#nav ul li ul li a:hover {
+    background: #f0f0f0;
+}
+
+/* --- Content --- */
+#wrap-content {
+    background: #fff;
+    padding: 50px 30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+#content h2 {
+    color: #1e3c72;
+    border-bottom: 2px solid #2a5298;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#ul-normal li {
+    margin-bottom: 12px;
+}
+
+#ul-normal p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* --- Footer --- */
+#footer-wrap {
+    margin-top: 50px;
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+#footer p {
+    margin: 5px 0;
+}
+
+/* --- Buttons / Links --- */
+a {
+    color: #2a5298;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #1e3c72;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .container_16 {
+        width: 90%;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #wrap-content {
+        padding: 20px;
+    }
+
+    #logo img {
+        max-height: 50px;
+    }
+}
