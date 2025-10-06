@@ -163,9 +163,14 @@ body {
     gap: 10px;
 }
 
-.logo img {
-    height: 50px;
-    width: auto;
+#logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .logo h1 {
