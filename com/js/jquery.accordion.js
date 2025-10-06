@@ -30,7 +30,7 @@
 			if ( resizeTimeout ) { clearTimeout( resizeTimeout ); }
 			resizeTimeout = setTimeout(function() {
 				jQuery.event.handle.apply( context, args );
-			}, execAsap === "execAsap"? 0 : 100 );
+			}, execAsap === "execAsap"? 0 : 150 );
 		}
 	};
 
@@ -57,7 +57,7 @@
 		// if set to true, only one item can be opened. Once one item is opened, any other that is opened will be closed first
 		oneOpenedItem	: false,
 		// speed of the open / close item animation
-		speed			: 600,
+		speed			: 500,
 		// easing of the open / close item animation
 		easing			: 'easeInOutExpo',
 		// speed of the scroll to action animation
